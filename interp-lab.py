@@ -37,6 +37,7 @@ activations = activation_model.predict(img_tensor)
 
 # Channel 5
 import matplotlib.pyplot as plt
+first_layer_activation = activations[0]
 plt.matshow(first_layer_activation[0, :, :, 5], cmap="viridis")
 
 # All channels
